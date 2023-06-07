@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap');
+:root{
+/*color-scheme*/
+
+    --iris-color: #4D5AE5;
+    --ocean-color: #404BBF;
+    --navi-blue-color: #2E2F42;
+    --green-color: #31D0AA;
+    --slate-color: #434455;
+    --light-slate-color: #8E8F99;
+    --cornflower-color: #E7E9FC;
+    --cloud-color: #F4F4FD;
+    --navi-blue-modal-color: rgba(46, 47, 66, 0.4);
+    --gray-color: rgba(46, 47, 66, 0.7);
+    --white-color: #FFFFFF;
+    --dairy-color: #FCFCFC;
+
+}
+/*Global*/
+
+body{
+    background-color: var(--white-color);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: var(--slate-color);
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+img{
+    display: block;
+}
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* попытка убрать ошибку с портфолио
+.main-title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+}*/
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+
+/*Header*/
+
+.menu{
+    border-bottom: 1px solid var(--cornflower-color);
+}
+.menu-nav{
+    display: flex;
+}
+.menu-nav-list{
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: var(--iris-color);
+    margin-right: 76px;
+    
+}
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.accent{
+    color: var(--navi-blue-color);
+}
+.nav-list{
+    display: flex;
+    gap: 40px;
+}
+.nav-menu-item{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navi-blue-color);
+    padding: 24px 0;
+
+}
+.nav-menu-item.link{
+    text-decoration: none;
+}
+.nav-menu-item:hover{
+    color: var(--ocean-color);
+
+}
+.nav-menu-item:focus{
+    color:var(--ocean-color);
+}
+address{
+    font-style: normal;
+    padding: 24px 0;
+    margin-left: auto;
+}
+.address-list{
+    display: flex;
+    gap: 40px;
+}
+.list-contacts{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+    
+}
+.list-contacts.link {
+    text-decoration: none;
+    
+}
+.list-contacts:hover {
+    color: var(--ocean-color);
+
+}
+.list-contacts:focus {
+    color: var(--ocean-color);
+}
+
+/*Footer*/
+
+.footer-section {
+    background-color: var(--navi-blue-color);
+    padding: 100px 0;
+}
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris-color);
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.accent-footer {
+    color: var(--cloud-color);
+}
+.footer-text {
+    line-height: 1.5;
+    color: var(--cloud-color);
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+
+/*index.html*/
+/*Перша секція*/
+
+.title-section{
+    background-color: var(--navi-blue-color);
+    padding: 188px 0;
+}
+.title{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+.order-service-btn{
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--iris-color);
+    border: none;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
+  
+}
+.order-service-btn:hover{
+    background-color: var(--ocean-color);
+}
+.order-service-btn:focus{
+    background-color: var(--ocean-color);
+}
+
+/*Друга секція*/
+
+.strategy-section{
+    padding: 120px 0;
+}
+.stratgy-section-list{
+    display: flex;
+    gap: 24px;
+}
+.stratgy-section-item{
+    width: calc((100% - 72px) / 4);
+}
+.strategy-section-title{
+    color: var(--navi-blue-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+.strategy-section-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+}
+
+/*Третя секція*/
+
+.product-section{
+    padding-bottom: 120px;
+    text-align: center;
+}
+.product-section-title{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color:var(--navi-blue-color);
+    margin-bottom: 72px;
+
+}
+.product-section-list{
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+.product-section-item{
+    width: calc((100% - 48px) / 3);
+}
+.product-section > img{
+    border: 1px solid var(--cornflower-color);
+}
+
+/*Четверта секція*/
+
+.team-section{
+    background-color: var(--cloud-color);
+    text-align: center;
+    padding: 120px 0;
+}
+.team-section-title{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navi-blue-color);
+    margin: 0;
+    margin-bottom: 72px;
+}
+.team-section-list{
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    
+}
+.team-cards-item{
+    background-color: var(--white-color);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    
+}
+.team-cards{
+    padding: 32px 16px;
+}
+.team-cards-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navi-blue-color);
+    text-align: center;
+    margin-bottom: 8px;
+}
+.team-cards-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+    text-align: center;
+}
+
+/*Portfolio.html*/
+
+.portfolio-section{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.filter-button-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px
+}
+.filter-button{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris-color);
+    background-color: var(--cloud-color);
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--cornflower-color);
+    
+}
+.filter-button:hover{
+    color: var(--white-color);
+    background-color: #404BBF;
+    border: 1px solid transparent;
+}
+.filter-button:focus{
+    color: var(--white-color);
+    background-color: #404BBF;
+    border: 1px solid transparent
+}
+.product-item-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.product-item{
+    width: calc((100% - 48px) / 3);
+}
+.product-card{
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower-color);
+    border-top: none;
+    
+}
+.product-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navi-blue-color);
+    margin-bottom: 8px;
+}
+.product-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+}
+
+

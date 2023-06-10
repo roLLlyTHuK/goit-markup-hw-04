@@ -31,11 +31,13 @@ body{
 img{
     display: block;
 }
-.container{
+.container {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
+
 .visually-hidden {
         position: absolute;
         width: 1px;
@@ -320,6 +322,91 @@ address{
     text-align: center;
 }
 
+.social-panel {
+    display: flex;
+    margin: 0;
+    padding: 0 auto;
+    margin-top: 8px;
+}
+
+.social-icons-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+}
+
+.social-icons-item {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--iris-color);
+    border-radius: 50%;
+    padding: 12px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.social-icon {
+    fill: var(--white-color);
+}
+.social-icons-item:hover, .social-icons-item:active{
+    background-color: var(--green-color);
+}
+/*Customers section*/
+.customers-section{
+padding: 0;
+padding-top: 120px;
+padding-bottom: 120px;
+margin: 0;
+text-align: center;
+
+}
+.customers-title{
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--navi-blue-color);
+        margin-bottom: 72px;
+}
+.customers-list{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 24px;
+}
+.customers-item{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.customers-link{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+
+}
+.customers-icon{
+    fill: var(--light-slate-color);
+}
+.customers-link:hover{
+    border-color:  var(--ocean-color);
+   
+}
+.customers-link:hover .customers-icon{
+    fill: var(--ocean-color);
+}
 /*Portfolio.html*/
 
 .portfolio-section{

@@ -181,6 +181,19 @@ address{
     padding: 0;
     gap: 120px;
 }
+.footer-social-panel{
+    display: flex;
+    margin: 0;
+    padding: 0 auto;
+    margin-top: 16px;
+}
+.footer-icons-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+}
 /*index.html*/
 /*Перша секція*/
 

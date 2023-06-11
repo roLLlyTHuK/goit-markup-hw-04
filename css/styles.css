@@ -173,7 +173,14 @@ address{
     letter-spacing: 0.02em;
     max-width: 264px;
 }
-
+.footer-tab{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    gap: 120px;
+}
 /*index.html*/
 /*Перша секція*/
 
@@ -242,7 +249,12 @@ address{
     letter-spacing: 0.02em;
     color: var(--slate-color);
 }
-
+.benefits-icon{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
 /*Третя секція*/
 
 .product-section{
@@ -435,13 +447,17 @@ gap: 24px;
 }
 .filter-button:hover{
     color: var(--white-color);
-    background-color: #404BBF;
+    background-color: var(--ocean-color);
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   
 }
 .filter-button:focus{
     color: var(--white-color);
-    background-color: #404BBF;
+    background-color: var(--ocean-color);
     border: 1px solid transparent
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 .product-item-list{
     display: flex;
@@ -471,6 +487,14 @@ gap: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
+}
+.product-card:focus{
+    border: 1px solid var(--cloud-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.product-card:hover{
+    border: 1px solid var(--cloud-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 

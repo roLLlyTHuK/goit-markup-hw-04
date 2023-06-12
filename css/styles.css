@@ -112,12 +112,10 @@ p{
 .nav-menu-item.link{
     text-decoration: none;
 }
-.nav-menu-item:hover{
+.nav-menu-item:hover,
+.nav-menu-item:focus{
     color: var(--ocean-color);
 
-}
-.nav-menu-item:focus{
-    color:var(--ocean-color);
 }
 address{
     font-style: normal;
@@ -139,12 +137,10 @@ address{
     text-decoration: none;
     
 }
-.list-contacts:hover {
-    color: var(--ocean-color);
-
-}
+.list-contacts:hover, 
 .list-contacts:focus {
     color: var(--ocean-color);
+
 }
 
 /*Footer*/
@@ -286,16 +282,11 @@ address{
     margin: 0 auto;
   
 }
-.order-service-btn:hover{
-    background-color: var(--ocean-color);
-    
-}
+.order-service-btn:hover, 
 .order-service-btn:focus{
     background-color: var(--ocean-color);
 }
-.order-service-btn:active .modal-overlay{
-    transform: translateY(0);
-}
+
 /*Друга секція*/
 
 .strategy-section{
@@ -440,8 +431,8 @@ address{
     fill: var(--white-color);
 }
 .social-icons-item:hover,
-.social-icons-item:focus, 
-.social-icons-item:active{
+.social-icons-item:focus 
+{
     background-color: var(--green-color);
 }
 /*Customers section*/
@@ -523,19 +514,12 @@ gap: 24px;
     border: 1px solid var(--cornflower-color);
     
 }
-.filter-button:hover{
-    color: var(--white-color);
-    background-color: var(--ocean-color);
-    border: 1px solid transparent;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-   
-}
+.filter-button:hover,
 .filter-button:focus{
     color: var(--white-color);
     background-color: var(--ocean-color);
     border: 1px solid transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    
 }
 .product-item-list{
     display: flex;
@@ -568,11 +552,8 @@ gap: 24px;
     letter-spacing: 0.02em;
     color: var(--slate-color);
 }
+.product-item:hover, 
 .product-item:focus{
-    border: 1px solid var(--cloud-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.product-item:hover{
     border: 1px solid var(--cloud-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -602,6 +583,6 @@ gap: 24px;
     margin-top: 40px;
     margin-left: 32px;
     margin-right: 32px;
-   
+  
 }
 

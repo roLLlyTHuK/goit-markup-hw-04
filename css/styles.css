@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap');*/
 :root{
 /*color-scheme*/
 
@@ -38,8 +38,6 @@ img{
     margin: 0 auto;
     padding: 0 15px;
 }
-
-
 .visually-hidden {
         position: absolute;
         width: 1px;
@@ -232,13 +230,13 @@ address{
 
 .modal-form p{
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: var(--navi-blue-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+     text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--navi-blue-color);
 }
 .close-button{
     position: absolute;
@@ -260,8 +258,6 @@ address{
     background-size: cover;
     padding: 188px 0;
     }
-
-
 .title{
     color: var(--white-color);
     text-align: center;
@@ -436,6 +432,7 @@ address{
     padding: 12px;
     margin: 0;
     cursor: pointer;
+    overflow: hidden;
     transition: background-color, var(--transition);
     }
 

@@ -61,7 +61,9 @@
       <section class="title-section">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-service-btn">Order Service</button>
+          <button type="button" class="order-service-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -379,5 +381,36 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-form">
+        <button type="button" class="close-button" data-modal-close>
+          &times;
+        </button>
+        <h2>Модальное окно</h2>
+        <form>
+          <label for="name">Имя:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="phone">Телефон:</label><br />
+          <input type="tel" id="phone" name="phone" required /><br />
+
+          <label for="email">Емейл:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="comments">Комментарии:</label><br />
+          <textarea id="comments" name="comments"></textarea><br />
+
+          <input type="checkbox" id="checkbox" name="checkbox" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis,
+            adipisci.
+          </p>
+          <br />
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

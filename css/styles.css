@@ -14,11 +14,13 @@
     --gray-color: rgba(46, 47, 66, 0.7);
     --white-color: #FFFFFF;
     --dairy-color: #FCFCFC;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 /*Global*/
 
 body{
+    position: relative;
     background-color: var(--white-color);
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -194,6 +196,58 @@ address{
     gap: 16px;
 
 }
+/*Modal*/
+
+.modal {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 672px;
+    background-color: var(--navi-blue-modal-color);
+    margin: 0;
+    bottom: 0;
+   
+}
+
+.modal-form {
+    position: relative;
+    background-color: var(--cornflower-color);
+    width: 408px;
+    height: 584px;
+    margin: 0;
+    padding: 72px 24px 24px;
+    border-radius: 4px;
+    position: absolute;
+    top: 80px;
+    left: auto; 
+}
+
+.is-hidden {
+    display: none;
+}
+
+.modal-form p{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--navi-blue-color);
+}
+.close-button{
+    position: absolute;
+    border: 1px solid --navi-blue-color;
+    border-radius: 90%;
+    top: 24px;
+    right: 24px;
+}
+
 /*index.html*/
 /*Перша секція*/
 
@@ -219,7 +273,7 @@ address{
     margin: 0 auto;
     margin-bottom: 48px;
 }
-.order-service-btn{
+.order-service-button{
     cursor: pointer;
     color: var(--white-color);
     background-color: var(--iris-color);
@@ -238,11 +292,14 @@ address{
 }
 .order-service-btn:hover{
     background-color: var(--ocean-color);
+    
 }
 .order-service-btn:focus{
     background-color: var(--ocean-color);
 }
-
+.order-service-btn:active .modal-overlay{
+    transform: translateY(0);
+}
 /*Друга секція*/
 
 .strategy-section{
@@ -289,7 +346,6 @@ address{
     text-transform: capitalize;
     color:var(--navi-blue-color);
     margin-bottom: 72px;
-
 }
 .product-section-list{
     display: flex;
@@ -332,6 +388,7 @@ address{
     background-color: var(--white-color);
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     
 }
 .team-cards{
@@ -379,12 +436,15 @@ address{
     padding: 12px;
     margin: 0;
     cursor: pointer;
-}
+    transition: background-color, var(--transition);
+    }
 
 .social-icon {
     fill: var(--white-color);
 }
-.social-icons-item:hover, .social-icons-item:active{
+.social-icons-item:hover,
+.social-icons-item:focus, 
+.social-icons-item:active{
     background-color: var(--green-color);
 }
 /*Customers section*/
@@ -427,10 +487,11 @@ gap: 24px;
     padding-right: 32px;
     border: 1px solid var(--light-slate-color);
     border-radius: 4px;
-
+    transition: border-color, var(--transition);
 }
 .customers-icon{
     fill: var(--light-slate-color);
+    transition: fill, var(--transition);
 }
 .customers-link:hover{
     border-color:  var(--ocean-color);
@@ -486,8 +547,10 @@ gap: 24px;
     row-gap: 48px;
 }
 .product-item{
-    width: calc((100% - 48px) / 3);
+   width: calc((100% - 48px) / 3);
+    
 }
+
 .product-card{
     padding: 32px 16px;
     border: 1px solid var(--cornflower-color);
@@ -508,13 +571,40 @@ gap: 24px;
     letter-spacing: 0.02em;
     color: var(--slate-color);
 }
-.product-card:focus{
+.product-item:focus{
     border: 1px solid var(--cloud-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.product-card:hover{
+.product-item:hover{
     border: 1px solid var(--cloud-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.overlay-card{
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris-color);
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
 }
 
+.overlay-card:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay p {
+    color: var(--cloud-color);
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
+   
+}
 

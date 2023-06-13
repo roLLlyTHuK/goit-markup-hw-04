@@ -384,31 +384,48 @@
 
     <div class="modal is-hidden" data-modal>
       <div class="modal-form">
-        <button type="button" class="close-button" data-modal-close>
-          &times;
-        </button>
-        <h2>Модальное окно</h2>
-        <form>
-          <label for="name">Имя:</label><br />
-          <input type="text" id="name" name="name" required /><br />
+        <div class="close-button" data-modal-close>
+          <!--button type="button" class="close-button" -->
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons/icons.svg#close"></use>
+          </svg>
+          <!--/button -->
+        </div>
+        <!-- Form 
+        <h2 class="modal-title">
+          Leave your contacts and we will call you back
+        </h2>
+        <form class="send-form">
+          <div class="form-item">
+            <label for="name">Имя:</label><br />
+            <input type="text" id="name" name="name" width="360px" required />
+          </div>
 
-          <label for="phone">Телефон:</label><br />
-          <input type="tel" id="phone" name="phone" required /><br />
+          <div class="form-item">
+            <label for="phone">Телефон:</label><br />
+            <input type="tel" id="phone" name="phone" required />
+          </div>
 
-          <label for="email">Емейл:</label><br />
-          <input type="email" id="email" name="email" required /><br />
+          <div class="form-item">
+            <label for="email">Емейл:</label><br />
+            <input type="email" id="email" name="email" required />
+          </div>
 
-          <label for="comments">Комментарии:</label><br />
-          <textarea id="comments" name="comments"></textarea><br />
+          <div class="form-item">
+            <label for="comments">Комментарии:</label><br />
+            <textarea id="comments" name="comments"></textarea>
+          </div>
 
-          <input type="checkbox" id="checkbox" name="checkbox" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis,
-            adipisci.
-          </p>
-          <br />
+          <div class="form-item">
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Officiis, adipisci.
+            </p>
+          </div>
+
           <button type="submit">Отправить</button>
-        </form>
+        </form>-->
       </div>
     </div>
     <script src="./js/modal.js"></script>

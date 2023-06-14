@@ -108,7 +108,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--navi-blue-color);
+  color: var(--ocean-color);
   padding: 24px 0;
   position: relative;
   transition: color var(--transition);
@@ -171,6 +171,7 @@ address {
   align-items: baseline;
 }
 .footer-tab-content {
+  margin: 0;
   margin-right: 120px;
 }
 .footer-logo {
@@ -196,14 +197,9 @@ address {
   max-width: 264px;
   margin-bottom: 16px;
 }
-.footer-tab {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
-  gap: 120px;
+.footer-tab-social {
 }
+
 .footer-icons-list {
   display: flex;
   gap: 16px;
@@ -253,8 +249,8 @@ address {
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--navi-blue-color);
-  box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition);
 }
 .is-hidden {
@@ -273,7 +269,7 @@ address {
   height: 24px;
   background-color: var(--cornflower-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 90%;
+  border-radius: 50%;
   padding: 0;
   cursor: pointer;
   transition: background-color var(--transition), border var(--transition);
@@ -287,7 +283,6 @@ address {
   border: none;
   fill: var(--white-color);
 }
-
 .modal-title {
   padding: 72px 24px 0;
   margin-bottom: 16px;
@@ -322,7 +317,7 @@ address {
 /*index.html*/
 /*Перша секція*/
 
-.title-section {
+.hero-section {
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -331,8 +326,9 @@ address {
     url(../images/main/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 188px 0;
-  min-width: 1440px;
+  max-width: 1440px;
 }
 .title {
   color: var(--white-color);
@@ -465,7 +461,7 @@ address {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-cards {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 .team-cards-title {
   font-weight: 500;
@@ -506,14 +502,14 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color, var(--transition);
+  transition: background-color var(--transition);
 }
 .social-icon {
-  fill: var(--white-color);
+  fill: var(--cloud-color);
 }
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--green-color);
+  background-color: var(--ocean-color);
 }
 /*Customers section*/
 .customers-section {
@@ -552,6 +548,8 @@ address {
   align-items: center;
   justify-content: center;
   color: var(--light-slate-color);
+  width: 100%;
+  height: 100%;
   padding: 0px;
   margin: 0px;
   padding-top: 12px;

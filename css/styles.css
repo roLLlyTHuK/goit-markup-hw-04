@@ -663,6 +663,7 @@ address {
   overflow: hidden;
   transition: transform var(--transition);
 }
+
 .overlay {
   position: absolute;
   top: 0;

@@ -114,10 +114,11 @@ p {
   transition: color var(--transition);
 }
 
-.active-page {
+.current {
   color: var(--ocean-color);
+  position: relative;
 }
-.active-page::after {
+.current::after {
   position: absolute;
   content: "";
   display: block;

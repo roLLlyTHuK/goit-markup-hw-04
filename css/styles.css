@@ -108,34 +108,32 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--ocean-color);
+  color: var(--navi-blue-color);
   padding: 24px 0;
   position: relative;
   transition: color var(--transition);
 }
-.nav-menu-item::after {
-  content: "";
+
+.active-page {
+  color: var(--ocean-color);
+}
+.active-page::after {
   position: absolute;
-  bottom: -1px;
+  content: "";
+  display: block;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: 4px;
-  background-color: var(--ocean-color);
   border-radius: 2px;
-  transform: scaleX(0);
-  transition: transform var(--transition);
-}
-.nav-menu-item.link {
-  text-decoration: none;
+  background-color: var(--ocean-color);
+  bottom: -1px;
 }
 .nav-menu-item:hover,
 .nav-menu-item:focus {
   color: var(--ocean-color);
 }
-.nav-menu-item:hover::after,
-.nav-menu-item:focus::after {
-  transform: scaleX(1);
-}
+
 address {
   font-style: normal;
   padding: 24px 0;
@@ -189,7 +187,7 @@ address {
   color: var(--cloud-color);
 }
 .footer-text {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: var(--white-color);
@@ -197,7 +195,13 @@ address {
   max-width: 264px;
   margin-bottom: 16px;
 }
-
+.social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+}
 .footer-icons-list {
   display: flex;
   gap: 16px;
@@ -491,7 +495,9 @@ address {
   letter-spacing: 0.02em;
   color: var(--slate-color);
   text-align: center;
-  padding: 32px 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .social-icons-list {

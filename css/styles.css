@@ -582,7 +582,7 @@ address {
 }
 .customers-icon {
   fill: currentColor;
-  transition: fill, var(--transition);
+  transition: fill var(--transition);
 }
 .customers-link:hover,
 .customers-link:focus {
